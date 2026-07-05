@@ -1,0 +1,1846 @@
+/******************************************************************************
+Project      : Sam Marbles & Granites
+Website      : https://sam-marbles.in
+File         : showroom.css
+Purpose      : Virtual Showroom Page
+Section      : Hero Banner & Introduction
+Author       : Premanandhan Narayanan
+Architecture : Modular CSS
+******************************************************************************/
+
+/*==============================================================================
+SHOWROOM HERO
+==============================================================================*/
+
+.showroom-hero{
+
+    position            : relative;
+
+    min-height          : 450px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    overflow            : hidden;
+
+    background:
+        linear-gradient(
+            rgba(11,35,65,.82),
+            rgba(11,35,65,.70)
+        ),
+        url("../images/banners/showroom-banner.jpg");
+
+    background-size     : cover;
+
+    background-position : center;
+
+    background-repeat   : no-repeat;
+
+}
+
+
+/*==============================================================================
+SHOWROOM HERO OVERLAY
+==============================================================================*/
+
+.showroom-hero::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    inset               : 0;
+
+    background          :
+        linear-gradient(
+            rgba(11,35,65,.15),
+            rgba(11,35,65,.55)
+        );
+
+}
+
+
+/*==============================================================================
+HERO CONTENT
+==============================================================================*/
+
+.showroom-hero-content{
+
+    position            : relative;
+
+    z-index             : 5;
+
+    text-align          : center;
+
+    max-width           : 900px;
+
+    color               : var(--white);
+
+}
+
+.showroom-hero-content h1{
+
+    color               : var(--white);
+
+    margin-bottom       : 22px;
+
+}
+
+.showroom-hero-content p{
+
+    font-size           : 1.10rem;
+
+    color               : rgba(255,255,255,.92);
+
+    max-width           : 760px;
+
+    margin              : auto;
+
+}
+
+
+/*==============================================================================
+BREADCRUMB
+==============================================================================*/
+
+.showroom-breadcrumb{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    gap                 : 12px;
+
+    margin-top          : 28px;
+
+    flex-wrap           : wrap;
+
+}
+
+.showroom-breadcrumb a{
+
+    color               : var(--secondary);
+
+}
+
+.showroom-breadcrumb span{
+
+    color               : rgba(255,255,255,.82);
+
+}
+
+
+/*==============================================================================
+INTRODUCTION SECTION
+==============================================================================*/
+
+.showroom-intro{
+
+    background          : var(--white);
+
+    position            : relative;
+
+    overflow            : hidden;
+
+}
+
+
+/* Decorative Circle */
+
+.showroom-intro::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 280px;
+
+    height              : 280px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    top                 : -120px;
+
+    right               : -120px;
+
+}
+
+
+/*==============================================================================
+INTRO GRID
+==============================================================================*/
+
+.showroom-grid{
+
+    display             : grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap                 : 70px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+INTRO IMAGE
+==============================================================================*/
+
+.showroom-image{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.showroom-image img{
+
+    width               : 100%;
+
+    display             : block;
+
+    transition          : .8s ease;
+
+}
+
+.showroom-image:hover img{
+
+    transform           : scale(1.06);
+
+}
+
+
+/*==============================================================================
+PLAY BUTTON
+==============================================================================*/
+
+.showroom-play{
+
+    position            : absolute;
+
+    top                 : 50%;
+
+    left                : 50%;
+
+    transform           : translate(-50%,-50%);
+
+    width               : 95px;
+
+    height              : 95px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(255,255,255,.90);
+
+    color               : var(--primary);
+
+    font-size           : 36px;
+
+    cursor              : pointer;
+
+    transition          : var(--transition);
+
+}
+
+.showroom-play:hover{
+
+    background          : var(--secondary);
+
+    transform           : translate(-50%,-50%) scale(1.08);
+
+}
+
+
+/*==============================================================================
+INTRO CONTENT
+==============================================================================*/
+
+.showroom-content{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    justify-content     : center;
+
+}
+
+.showroom-content h2{
+
+    margin-bottom       : 22px;
+
+}
+
+.showroom-content p{
+
+    margin-bottom       : 20px;
+
+    font-size           : 1.05rem;
+
+}
+
+.showroom-content .btn{
+
+    margin-top          : 15px;
+
+    align-self          : flex-start;
+
+}
+
+
+/******************************************************************************
+END OF PART 1
+
+NEXT PART
+
+360° EXPERIENCE
+
+VIDEO CONTAINER
+
+VIDEO PLAYER
+
+FULL SCREEN SUPPORT
+
+******************************************************************************/
+/******************************************************************************
+PART 2
+
+360° EXPERIENCE
+VIDEO PLAYER
+VIDEO CONTROLS
+SHOWROOM FEATURES
+
+******************************************************************************/
+
+/*==============================================================================
+360° EXPERIENCE SECTION
+==============================================================================*/
+
+.showroom-experience{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+.showroom-experience::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 320px;
+
+    height              : 320px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    left                : -140px;
+
+    bottom              : -140px;
+
+}
+
+
+/*==============================================================================
+VIDEO CONTAINER
+==============================================================================*/
+
+.video-wrapper{
+
+    position            : relative;
+
+    max-width           : 1200px;
+
+    margin              : auto;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+    background          : #000;
+
+}
+
+
+/*==============================================================================
+SHOWROOM VIDEO
+==============================================================================*/
+
+.showroom-video{
+
+    width               : 100%;
+
+    display             : block;
+
+    aspect-ratio        : 16 / 9;
+
+    object-fit          : cover;
+
+}
+
+
+/*==============================================================================
+360° IFRAME SUPPORT
+==============================================================================*/
+
+.showroom-tour{
+
+    width               : 100%;
+
+    aspect-ratio        : 16 / 9;
+
+    border              : none;
+
+    display             : block;
+
+}
+
+
+/*==============================================================================
+VIDEO OVERLAY
+==============================================================================*/
+
+.video-overlay{
+
+    position            : absolute;
+
+    inset               : 0;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(11,35,65,.25);
+
+    transition          : var(--transition);
+
+}
+
+.video-wrapper:hover .video-overlay{
+
+    background          : rgba(11,35,65,.12);
+
+}
+
+
+/*==============================================================================
+PLAY BUTTON
+==============================================================================*/
+
+.video-play-button{
+
+    width               : 110px;
+
+    height              : 110px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(255,255,255,.90);
+
+    color               : var(--primary);
+
+    font-size           : 42px;
+
+    cursor              : pointer;
+
+    transition          : var(--transition);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.video-play-button:hover{
+
+    background          : var(--secondary);
+
+    transform           : scale(1.08);
+
+}
+
+
+/*==============================================================================
+VIDEO INFORMATION BAR
+==============================================================================*/
+
+.video-info{
+
+    display             : flex;
+
+    justify-content     : space-between;
+
+    align-items         : center;
+
+    flex-wrap           : wrap;
+
+    gap                 : 20px;
+
+    padding             : 28px 35px;
+
+    background          : var(--white);
+
+}
+
+.video-title h3{
+
+    margin-bottom       : 8px;
+
+}
+
+.video-title p{
+
+    margin-bottom       : 0;
+
+}
+
+
+/*==============================================================================
+VIDEO ACTIONS
+==============================================================================*/
+
+.video-actions{
+
+    display             : flex;
+
+    gap                 : 15px;
+
+    flex-wrap           : wrap;
+
+}
+
+
+/*==============================================================================
+SHOWROOM FEATURES
+==============================================================================*/
+
+.showroom-features{
+
+    margin-top          : 70px;
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap                 : 30px;
+
+}
+
+.showroom-feature{
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 35px 30px;
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.showroom-feature:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+FEATURE ICON
+==============================================================================*/
+
+.showroom-feature-icon{
+
+    width               : 80px;
+
+    height              : 80px;
+
+    margin              : 0 auto 25px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.15);
+
+}
+
+.showroom-feature-icon i{
+
+    font-size           : 34px;
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+FEATURE CONTENT
+==============================================================================*/
+
+.showroom-feature h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.showroom-feature p{
+
+    margin-bottom       : 0;
+
+}
+
+
+/******************************************************************************
+END OF PART 2
+
+NEXT PART
+
+VIDEO GALLERY
+
+SHOWROOM HIGHLIGHTS
+
+IMAGE GALLERY
+
+HOVER EFFECTS
+
+******************************************************************************/
+/******************************************************************************
+PART 3
+
+VIDEO GALLERY
+SHOWROOM HIGHLIGHTS
+IMAGE GALLERY
+HOVER EFFECTS
+
+******************************************************************************/
+
+/*==============================================================================
+SHOWROOM GALLERY
+==============================================================================*/
+
+.showroom-gallery{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    overflow            : hidden;
+
+}
+
+
+/* Decorative Background */
+
+.showroom-gallery::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 300px;
+
+    height              : 300px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    top                 : -140px;
+
+    right               : -140px;
+
+}
+
+
+/*==============================================================================
+VIDEO GRID
+==============================================================================*/
+
+.video-gallery{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+VIDEO CARD
+==============================================================================*/
+
+.video-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    overflow            : hidden;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.video-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+VIDEO THUMBNAIL
+==============================================================================*/
+
+.video-thumbnail{
+
+    position            : relative;
+
+    height              : 240px;
+
+    overflow            : hidden;
+
+}
+
+.video-thumbnail img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+    transition          : .8s ease;
+
+}
+
+.video-card:hover .video-thumbnail img{
+
+    transform           : scale(1.08);
+
+}
+
+
+/*==============================================================================
+VIDEO PLAY ICON
+==============================================================================*/
+
+.video-thumbnail .play-icon{
+
+    position            : absolute;
+
+    top                 : 50%;
+
+    left                : 50%;
+
+    transform           : translate(-50%,-50%);
+
+    width               : 75px;
+
+    height              : 75px;
+
+    border-radius       : 50%;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(255,255,255,.90);
+
+    color               : var(--primary);
+
+    font-size           : 30px;
+
+    transition          : var(--transition);
+
+}
+
+.video-card:hover .play-icon{
+
+    background          : var(--secondary);
+
+    transform           : translate(-50%,-50%) scale(1.10);
+
+}
+
+
+/*==============================================================================
+VIDEO DETAILS
+==============================================================================*/
+
+.video-details{
+
+    padding             : 28px;
+
+}
+
+.video-details h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.video-details p{
+
+    margin-bottom       : 22px;
+
+}
+
+
+/*==============================================================================
+VIDEO TAG
+==============================================================================*/
+
+.video-tag{
+
+    display             : inline-block;
+
+    padding             : 7px 16px;
+
+    margin-bottom       : 18px;
+
+    border-radius       : 999px;
+
+    background          : rgba(212,175,55,.15);
+
+    color               : var(--primary);
+
+    font-size           : .82rem;
+
+    font-weight         : 600;
+
+}
+
+
+/*==============================================================================
+SHOWROOM HIGHLIGHTS
+==============================================================================*/
+
+.showroom-highlights{
+
+    margin-top          : 90px;
+
+}
+
+.highlight-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap                 : 30px;
+
+}
+
+.highlight-card{
+
+    background          : var(--light);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 35px 30px;
+
+    text-align          : center;
+
+    transition          : var(--transition);
+
+}
+
+.highlight-card:hover{
+
+    background          : var(--primary);
+
+    transform           : translateY(-10px);
+
+}
+
+.highlight-card:hover h3,
+
+.highlight-card:hover p{
+
+    color               : var(--white);
+
+}
+
+
+/*==============================================================================
+HIGHLIGHT ICON
+==============================================================================*/
+
+.highlight-icon{
+
+    width               : 80px;
+
+    height              : 80px;
+
+    margin              : 0 auto 25px;
+
+    border-radius       : 50%;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(212,175,55,.18);
+
+}
+
+.highlight-icon i{
+
+    font-size           : 34px;
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+PHOTO GALLERY
+==============================================================================*/
+
+.photo-gallery{
+
+    margin-top          : 90px;
+
+}
+
+.photo-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap                 : 20px;
+
+}
+
+.photo-item{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-medium);
+
+    cursor              : pointer;
+
+}
+
+.photo-item img{
+
+    width               : 100%;
+
+    height              : 260px;
+
+    object-fit          : cover;
+
+    transition          : .8s ease;
+
+}
+
+.photo-item:hover img{
+
+    transform           : scale(1.08);
+
+}
+
+
+/*==============================================================================
+PHOTO OVERLAY
+==============================================================================*/
+
+.photo-overlay{
+
+    position            : absolute;
+
+    inset               : 0;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(11,35,65,.70);
+
+    opacity             : 0;
+
+    transition          : var(--transition);
+
+}
+
+.photo-item:hover .photo-overlay{
+
+    opacity             : 1;
+
+}
+
+.photo-overlay i{
+
+    color               : var(--white);
+
+    font-size           : 34px;
+
+}
+
+
+/******************************************************************************
+END OF PART 3
+
+NEXT PART
+
+VISIT SHOWROOM
+
+GOOGLE MAP
+
+WORKING HOURS
+
+CONTACT INFORMATION
+
+******************************************************************************/
+  /******************************************************************************
+PART 4
+
+VISIT SHOWROOM
+GOOGLE MAP
+WORKING HOURS
+CONTACT INFORMATION
+
+******************************************************************************/
+
+/*==============================================================================
+VISIT SHOWROOM SECTION
+==============================================================================*/
+
+.visit-showroom{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+.visit-showroom::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 320px;
+
+    height              : 320px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    left                : -150px;
+
+    top                 : -150px;
+
+}
+
+
+/*==============================================================================
+SHOWROOM GRID
+==============================================================================*/
+
+.visit-grid{
+
+    display             : grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap                 : 60px;
+
+    align-items         : stretch;
+
+}
+
+
+/*==============================================================================
+CONTACT CARD
+==============================================================================*/
+
+.showroom-card{
+
+    background          : var(--primary);
+
+    color               : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 40px;
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.showroom-card h2{
+
+    color               : var(--white);
+
+    margin-bottom       : 20px;
+
+}
+
+.showroom-card p{
+
+    color               : rgba(255,255,255,.90);
+
+    margin-bottom       : 25px;
+
+}
+
+
+/*==============================================================================
+CONTACT LIST
+==============================================================================*/
+
+.contact-list{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    gap                 : 20px;
+
+}
+
+.contact-item{
+
+    display             : flex;
+
+    align-items         : flex-start;
+
+    gap                 : 18px;
+
+}
+
+.contact-item i{
+
+    width               : 55px;
+
+    height              : 55px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(255,255,255,.12);
+
+    color               : var(--secondary);
+
+    font-size           : 22px;
+
+}
+
+.contact-item h4{
+
+    color               : var(--white);
+
+    margin-bottom       : 6px;
+
+}
+
+.contact-item p{
+
+    margin              : 0;
+
+    color               : rgba(255,255,255,.85);
+
+}
+
+
+/*==============================================================================
+WORKING HOURS
+==============================================================================*/
+
+.working-hours{
+
+    margin-top          : 40px;
+
+    padding-top         : 30px;
+
+    border-top          : 1px solid rgba(255,255,255,.15);
+
+}
+
+.hours-list{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    gap                 : 14px;
+
+}
+
+.hours-item{
+
+    display             : flex;
+
+    justify-content     : space-between;
+
+    align-items         : center;
+
+    color               : rgba(255,255,255,.90);
+
+}
+
+.hours-item strong{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+MAP CARD
+==============================================================================*/
+
+.map-card{
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    background          : var(--white);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.map-card iframe{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    min-height          : 650px;
+
+    border              : 0;
+
+}
+
+
+/*==============================================================================
+SHOWROOM CTA
+==============================================================================*/
+
+.showroom-cta{
+
+    margin-top          : 70px;
+
+    background          : var(--secondary);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 60px;
+
+    text-align          : center;
+
+}
+
+.showroom-cta h2{
+
+    color               : var(--primary);
+
+    margin-bottom       : 18px;
+
+}
+
+.showroom-cta p{
+
+    max-width           : 750px;
+
+    margin              : auto auto 35px;
+
+    color               : var(--primary);
+
+    font-size           : 1.08rem;
+
+}
+
+
+/*==============================================================================
+CTA BUTTON GROUP
+==============================================================================*/
+
+.showroom-cta-buttons{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    gap                 : 20px;
+
+    flex-wrap           : wrap;
+
+}
+
+.showroom-cta-buttons .btn{
+
+    min-width           : 220px;
+
+}
+
+
+/*==============================================================================
+SHOWROOM QUICK ACTIONS
+==============================================================================*/
+
+.quick-actions{
+
+    margin-top          : 50px;
+
+    display             : grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap                 : 20px;
+
+}
+
+.quick-action{
+
+    background          : rgba(255,255,255,.08);
+
+    border-radius       : var(--radius-medium);
+
+    padding             : 25px;
+
+    text-align          : center;
+
+    transition          : var(--transition);
+
+}
+
+.quick-action:hover{
+
+    background          : var(--secondary);
+
+    transform           : translateY(-8px);
+
+}
+
+.quick-action:hover h4{
+
+    color               : var(--primary);
+
+}
+
+.quick-action:hover i{
+
+    color               : var(--primary);
+
+}
+
+.quick-action i{
+
+    font-size           : 34px;
+
+    color               : var(--secondary);
+
+    margin-bottom       : 15px;
+
+}
+
+.quick-action h4{
+
+    color               : var(--white);
+
+    margin-bottom       : 10px;
+
+}
+
+.quick-action p{
+
+    color               : rgba(255,255,255,.80);
+
+    margin-bottom       : 0;
+
+}
+
+
+/******************************************************************************
+END OF PART 4
+
+NEXT PART
+
+RESPONSIVE DESIGN
+
+ANIMATIONS
+
+ACCESSIBILITY
+
+PRINT STYLES
+
+******************************************************************************/
+  /******************************************************************************
+PART 5
+
+RESPONSIVE DESIGN
+ANIMATIONS
+ACCESSIBILITY
+PRINT
+LOADING STATES
+
+******************************************************************************/
+
+/*==============================================================================
+FADE-IN ANIMATION
+==============================================================================*/
+
+.showroom-animate{
+
+    opacity             : 0;
+
+    transform           : translateY(40px);
+
+    transition          :
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.showroom-animate.show{
+
+    opacity             : 1;
+
+    transform           : translateY(0);
+
+}
+
+
+/*==============================================================================
+VIDEO HOVER ANIMATION
+==============================================================================*/
+
+.video-wrapper{
+
+    transition          : transform .5s ease,
+                          box-shadow .5s ease;
+
+}
+
+.video-wrapper:hover{
+
+    transform           : translateY(-6px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+PHOTO HOVER
+==============================================================================*/
+
+.photo-item{
+
+    transition          : transform .35s ease;
+
+}
+
+.photo-item:hover{
+
+    transform           : translateY(-8px);
+
+}
+
+
+/*==============================================================================
+BUTTON ANIMATION
+==============================================================================*/
+
+.showroom-cta .btn{
+
+    transition          : all .35s ease;
+
+}
+
+.showroom-cta .btn:hover{
+
+    transform           : translateY(-4px);
+
+}
+
+
+/*==============================================================================
+LOADING PLACEHOLDER
+==============================================================================*/
+
+.showroom-loading{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    min-height          : 400px;
+
+}
+
+.loading-spinner{
+
+    width               : 70px;
+
+    height              : 70px;
+
+    border              : 6px solid rgba(0,0,0,.08);
+
+    border-top          : 6px solid var(--secondary);
+
+    border-radius       : 50%;
+
+    animation           : showroomSpin 1s linear infinite;
+
+}
+
+
+/*==============================================================================
+ACCESSIBILITY
+==============================================================================*/
+
+.video-play-button:focus,
+
+.showroom-play:focus,
+
+.quick-action:focus,
+
+.showroom-cta .btn:focus{
+
+    outline             : 3px solid var(--secondary);
+
+    outline-offset      : 4px;
+
+}
+
+
+/*==============================================================================
+TABLET
+==============================================================================*/
+
+@media(max-width:992px){
+
+.showroom-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.visit-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.quick-actions{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.photo-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.video-gallery{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/*==============================================================================
+MOBILE
+==============================================================================*/
+
+@media(max-width:768px){
+
+.showroom-hero{
+
+    min-height          : 320px;
+
+}
+
+.showroom-grid{
+
+    gap                 : 40px;
+
+}
+
+.partner-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-gallery{
+
+    grid-template-columns:1fr;
+
+}
+
+.photo-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.highlight-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.quick-actions{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-info{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+.video-actions{
+
+    justify-content     : center;
+
+}
+
+.showroom-card{
+
+    padding             : 30px;
+
+}
+
+.showroom-cta{
+
+    padding             : 45px 25px;
+
+}
+
+.showroom-cta-buttons{
+
+    flex-direction      : column;
+
+}
+
+.showroom-cta-buttons .btn{
+
+    width               : 100%;
+
+}
+
+.map-card iframe{
+
+    min-height          : 400px;
+
+}
+
+}
+
+
+/*==============================================================================
+SMALL MOBILE
+==============================================================================*/
+
+@media(max-width:480px){
+
+.showroom-hero h1{
+
+    font-size           : 2rem;
+
+}
+
+.showroom-hero p{
+
+    font-size           : .95rem;
+
+}
+
+.video-play-button{
+
+    width               : 75px;
+
+    height              : 75px;
+
+    font-size           : 30px;
+
+}
+
+.showroom-play{
+
+    width               : 70px;
+
+    height              : 70px;
+
+    font-size           : 28px;
+
+}
+
+.contact-item{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+.contact-item i{
+
+    margin              : auto;
+
+}
+
+.hours-item{
+
+    font-size           : .92rem;
+
+}
+
+}
+
+
+/*==============================================================================
+PRINT
+==============================================================================*/
+
+@media print{
+
+.showroom-hero,
+
+.video-overlay,
+
+.video-actions,
+
+.showroom-cta,
+
+.quick-actions{
+
+    display:none !important;
+
+}
+
+.map-card iframe{
+
+    display:none;
+
+}
+
+.showroom-card{
+
+    color:#000;
+
+    background:#fff;
+
+    box-shadow:none;
+
+    border:1px solid #cccccc;
+
+}
+
+}
+
+
+/*==============================================================================
+KEYFRAMES
+==============================================================================*/
+
+@keyframes showroomSpin{
+
+    from{
+
+        transform       : rotate(0deg);
+
+    }
+
+    to{
+
+        transform       : rotate(360deg);
+
+    }
+
+}
+
+
+/******************************************************************************
+END OF showroom.css
+
+Approximate Size : 850+ Lines
+
+SHOWROOM MODULE COMPLETED
+
+******************************************************************************/
