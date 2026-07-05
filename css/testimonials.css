@@ -1,0 +1,1662 @@
+/******************************************************************************
+Project      : Sam Marbles & Granites
+Website      : https://sam-marbles.in
+File         : testimonials.css
+Purpose      : Customer Testimonials
+Section      : Hero Banner, Rating & Introduction
+Author       : Premanandhan Narayanan
+Architecture : Modular CSS
+******************************************************************************/
+
+/*==============================================================================
+TESTIMONIAL HERO
+==============================================================================*/
+
+.testimonial-hero{
+
+    position            : relative;
+
+    min-height          : 420px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    overflow            : hidden;
+
+    background:
+        linear-gradient(
+            rgba(11,35,65,.82),
+            rgba(11,35,65,.72)
+        ),
+        url("../images/banners/testimonials-banner.jpg");
+
+    background-size     : cover;
+
+    background-position : center;
+
+    background-repeat   : no-repeat;
+
+}
+
+
+/*==============================================================================
+HERO OVERLAY
+==============================================================================*/
+
+.testimonial-hero::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    inset               : 0;
+
+    background:
+        linear-gradient(
+            rgba(11,35,65,.10),
+            rgba(11,35,65,.50)
+        );
+
+}
+
+
+/*==============================================================================
+HERO CONTENT
+==============================================================================*/
+
+.testimonial-hero-content{
+
+    position            : relative;
+
+    z-index             : 5;
+
+    text-align          : center;
+
+    max-width           : 900px;
+
+    color               : var(--white);
+
+}
+
+.testimonial-hero-content h1{
+
+    color               : var(--white);
+
+    margin-bottom       : 20px;
+
+}
+
+.testimonial-hero-content p{
+
+    max-width           : 760px;
+
+    margin              : auto;
+
+    color               : rgba(255,255,255,.90);
+
+    font-size           : 1.08rem;
+
+}
+
+
+/*==============================================================================
+BREADCRUMB
+==============================================================================*/
+
+.testimonial-breadcrumb{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    gap                 : 12px;
+
+    margin-top          : 28px;
+
+    flex-wrap           : wrap;
+
+}
+
+.testimonial-breadcrumb a{
+
+    color               : var(--secondary);
+
+}
+
+.testimonial-breadcrumb span{
+
+    color               : rgba(255,255,255,.82);
+
+}
+
+
+/*==============================================================================
+INTRODUCTION
+==============================================================================*/
+
+.testimonial-intro{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    overflow            : hidden;
+
+}
+
+.testimonial-intro::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 300px;
+
+    height              : 300px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    top                 : -130px;
+
+    right               : -130px;
+
+}
+
+
+/*==============================================================================
+INTRO GRID
+==============================================================================*/
+
+.testimonial-intro-grid{
+
+    display             : grid;
+
+    grid-template-columns:360px 1fr;
+
+    gap                 : 70px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+GOOGLE RATING CARD
+==============================================================================*/
+
+.google-rating-card{
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 45px 35px;
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-large);
+
+    transition          : var(--transition);
+
+}
+
+.google-rating-card:hover{
+
+    transform           : translateY(-8px);
+
+}
+
+
+/*==============================================================================
+GOOGLE LOGO
+==============================================================================*/
+
+.google-logo{
+
+    width               : 70px;
+
+    margin              : 0 auto 20px;
+
+}
+
+.google-logo img{
+
+    width               : 100%;
+
+}
+
+
+/*==============================================================================
+RATING VALUE
+==============================================================================*/
+
+.rating-value{
+
+    font-size           : 3.5rem;
+
+    font-weight         : 700;
+
+    color               : var(--primary);
+
+    line-height         : 1;
+
+    margin-bottom       : 15px;
+
+}
+
+
+/*==============================================================================
+STAR RATING
+==============================================================================*/
+
+.rating-stars{
+
+    color               : #FFD700;
+
+    font-size           : 24px;
+
+    letter-spacing      : 4px;
+
+    margin-bottom       : 18px;
+
+}
+
+
+/*==============================================================================
+RATING TEXT
+==============================================================================*/
+
+.rating-text{
+
+    color               : var(--grey);
+
+    font-size           : .95rem;
+
+}
+
+
+/*==============================================================================
+INTRO CONTENT
+==============================================================================*/
+
+.testimonial-content{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    justify-content     : center;
+
+}
+
+.testimonial-content h2{
+
+    margin-bottom       : 20px;
+
+}
+
+.testimonial-content p{
+
+    margin-bottom       : 20px;
+
+    font-size           : 1.05rem;
+
+}
+
+.testimonial-content .btn{
+
+    margin-top          : 15px;
+
+    align-self          : flex-start;
+
+}
+
+
+/******************************************************************************
+END OF PART 1
+
+NEXT PART
+
+TESTIMONIAL CARDS
+
+CUSTOMER DETAILS
+
+STAR RATING
+
+HOVER EFFECTS
+
+******************************************************************************/
+/******************************************************************************
+PART 2
+
+TESTIMONIAL CARDS
+CUSTOMER DETAILS
+STAR RATING
+HOVER EFFECTS
+
+******************************************************************************/
+
+/*==============================================================================
+TESTIMONIALS SECTION
+==============================================================================*/
+
+.testimonials-section{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+.testimonials-section::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 320px;
+
+    height              : 320px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    left                : -140px;
+
+    bottom              : -140px;
+
+}
+
+
+/*==============================================================================
+TESTIMONIAL GRID
+==============================================================================*/
+
+.testimonial-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(360px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+TESTIMONIAL CARD
+==============================================================================*/
+
+.testimonial-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 35px;
+
+    overflow            : hidden;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.testimonial-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+QUOTE ICON
+==============================================================================*/
+
+.testimonial-card::before{
+
+    content             : "❝";
+
+    position            : absolute;
+
+    top                 : 18px;
+
+    right               : 25px;
+
+    font-size           : 70px;
+
+    color               : rgba(212,175,55,.15);
+
+}
+
+
+/*==============================================================================
+STAR RATING
+==============================================================================*/
+
+.review-stars{
+
+    color               : #FFD700;
+
+    font-size           : 20px;
+
+    margin-bottom       : 20px;
+
+    letter-spacing      : 2px;
+
+}
+
+
+/*==============================================================================
+REVIEW CONTENT
+==============================================================================*/
+
+.review-text{
+
+    font-size           : 1rem;
+
+    line-height         : 1.9;
+
+    color               : var(--body-color);
+
+    font-style          : italic;
+
+    margin-bottom       : 30px;
+
+}
+
+
+/*==============================================================================
+CUSTOMER INFO
+==============================================================================*/
+
+.customer-info{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 18px;
+
+}
+
+
+/*==============================================================================
+CUSTOMER PHOTO
+==============================================================================*/
+
+.customer-photo{
+
+    width               : 70px;
+
+    height              : 70px;
+
+    border-radius       : 50%;
+
+    overflow            : hidden;
+
+    flex-shrink         : 0;
+
+    border              : 3px solid var(--secondary);
+
+}
+
+.customer-photo img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+}
+
+
+/*==============================================================================
+CUSTOMER DETAILS
+==============================================================================*/
+
+.customer-details{
+
+    flex                : 1;
+
+}
+
+.customer-details h3{
+
+    margin-bottom       : 5px;
+
+    font-size           : 1.15rem;
+
+}
+
+.customer-role{
+
+    color               : var(--grey);
+
+    font-size           : .90rem;
+
+    margin-bottom       : 8px;
+
+}
+
+
+/*==============================================================================
+VERIFIED BADGE
+==============================================================================*/
+
+.verified-review{
+
+    display             : inline-flex;
+
+    align-items         : center;
+
+    gap                 : 6px;
+
+    padding             : 6px 12px;
+
+    border-radius       : 999px;
+
+    background          : rgba(212,175,55,.12);
+
+    color               : var(--primary);
+
+    font-size           : .78rem;
+
+    font-weight         : 600;
+
+}
+
+.verified-review i{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+REVIEW DATE
+==============================================================================*/
+
+.review-date{
+
+    margin-top          : 18px;
+
+    font-size           : .85rem;
+
+    color               : var(--grey);
+
+}
+
+
+/******************************************************************************
+END OF PART 2
+
+NEXT PART
+
+FEATURED TESTIMONIAL
+
+REVIEW HIGHLIGHTS
+
+GOOGLE REVIEW SUMMARY
+
+CUSTOMER TRUST SECTION
+
+******************************************************************************/
+/******************************************************************************
+PART 3
+
+FEATURED TESTIMONIAL
+TRUST HIGHLIGHTS
+GOOGLE REVIEW SUMMARY
+CUSTOMER SUCCESS
+
+******************************************************************************/
+
+/*==============================================================================
+FEATURED TESTIMONIAL
+==============================================================================*/
+
+.featured-testimonial{
+
+    position            : relative;
+
+    background          : var(--primary);
+
+    color               : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 70px 60px;
+
+    overflow            : hidden;
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.featured-testimonial::before{
+
+    content             : "❝";
+
+    position            : absolute;
+
+    top                 : 20px;
+
+    right               : 40px;
+
+    font-size           : 150px;
+
+    color               : rgba(255,255,255,.08);
+
+}
+
+
+/*==============================================================================
+FEATURED REVIEW CONTENT
+==============================================================================*/
+
+.featured-content{
+
+    position            : relative;
+
+    z-index             : 2;
+
+    max-width           : 900px;
+
+    margin              : auto;
+
+    text-align          : center;
+
+}
+
+.featured-content .review-stars{
+
+    font-size           : 28px;
+
+    margin-bottom       : 30px;
+
+}
+
+.featured-content .review-text{
+
+    font-size           : 1.25rem;
+
+    line-height         : 2;
+
+    color               : rgba(255,255,255,.95);
+
+    font-style          : italic;
+
+    margin-bottom       : 35px;
+
+}
+
+
+/*==============================================================================
+FEATURED CUSTOMER
+==============================================================================*/
+
+.featured-customer{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    align-items         : center;
+
+}
+
+.featured-customer img{
+
+    width               : 90px;
+
+    height              : 90px;
+
+    border-radius       : 50%;
+
+    border              : 4px solid var(--secondary);
+
+    margin-bottom       : 20px;
+
+    object-fit          : cover;
+
+}
+
+.featured-customer h3{
+
+    color               : var(--white);
+
+    margin-bottom       : 8px;
+
+}
+
+.featured-customer span{
+
+    color               : rgba(255,255,255,.80);
+
+}
+
+
+/*==============================================================================
+TRUST HIGHLIGHTS
+==============================================================================*/
+
+.trust-highlights{
+
+    margin-top          : 90px;
+
+}
+
+.trust-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap                 : 30px;
+
+}
+
+
+/*==============================================================================
+TRUST CARD
+==============================================================================*/
+
+.trust-card{
+
+    background          : var(--white);
+
+    padding             : 35px;
+
+    border-radius       : var(--radius-large);
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.trust-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.trust-card i{
+
+    font-size           : 42px;
+
+    color               : var(--secondary);
+
+    margin-bottom       : 20px;
+
+}
+
+.trust-card h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.trust-card p{
+
+    margin-bottom       : 0;
+
+}
+
+
+/*==============================================================================
+GOOGLE REVIEW SUMMARY
+==============================================================================*/
+
+.google-review-summary{
+
+    margin-top          : 90px;
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 50px;
+
+    box-shadow          : var(--shadow-small);
+
+}
+
+.summary-grid{
+
+    display             : grid;
+
+    grid-template-columns:220px 1fr;
+
+    gap                 : 40px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+SUMMARY RATING
+==============================================================================*/
+
+.summary-rating{
+
+    text-align          : center;
+
+}
+
+.summary-rating h2{
+
+    font-size           : 4rem;
+
+    color               : var(--primary);
+
+    margin-bottom       : 10px;
+
+}
+
+.summary-rating .review-stars{
+
+    font-size           : 24px;
+
+}
+
+
+/*==============================================================================
+SUMMARY DETAILS
+==============================================================================*/
+
+.summary-details h3{
+
+    margin-bottom       : 18px;
+
+}
+
+.summary-details p{
+
+    margin-bottom       : 15px;
+
+}
+
+.review-progress{
+
+    margin-top          : 25px;
+
+}
+
+.progress-row{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 15px;
+
+    margin-bottom       : 15px;
+
+}
+
+.progress-label{
+
+    width               : 70px;
+
+    font-weight         : 600;
+
+}
+
+.progress-bar{
+
+    flex                : 1;
+
+    height              : 8px;
+
+    background          : #e8e8e8;
+
+    border-radius       : 999px;
+
+    overflow            : hidden;
+
+}
+
+.progress-fill{
+
+    height              : 100%;
+
+    background          : var(--secondary);
+
+    border-radius       : inherit;
+
+}
+
+
+/******************************************************************************
+END OF PART 3
+
+NEXT PART
+
+WRITE A REVIEW
+
+GOOGLE CTA
+
+VIDEO TESTIMONIALS
+
+SUCCESS STORIES
+
+******************************************************************************/
+/******************************************************************************
+PART 4
+
+GOOGLE REVIEW CTA
+WRITE A REVIEW
+VIDEO TESTIMONIALS
+SUCCESS STORIES
+
+******************************************************************************/
+
+/*==============================================================================
+VIDEO TESTIMONIALS
+==============================================================================*/
+
+.video-testimonials{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+.video-testimonials::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 320px;
+
+    height              : 320px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.05);
+
+    right               : -140px;
+
+    top                 : -140px;
+
+}
+
+
+/*==============================================================================
+VIDEO GRID
+==============================================================================*/
+
+.video-testimonial-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(340px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+VIDEO CARD
+==============================================================================*/
+
+.video-testimonial-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    overflow            : hidden;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.video-testimonial-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+VIDEO THUMBNAIL
+==============================================================================*/
+
+.video-testimonial-image{
+
+    position            : relative;
+
+    height              : 240px;
+
+    overflow            : hidden;
+
+}
+
+.video-testimonial-image img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+    transition          : .8s ease;
+
+}
+
+.video-testimonial-card:hover
+.video-testimonial-image img{
+
+    transform           : scale(1.08);
+
+}
+
+
+/*==============================================================================
+PLAY BUTTON
+==============================================================================*/
+
+.testimonial-play{
+
+    position            : absolute;
+
+    top                 : 50%;
+
+    left                : 50%;
+
+    transform           : translate(-50%,-50%);
+
+    width               : 75px;
+
+    height              : 75px;
+
+    border-radius       : 50%;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(255,255,255,.90);
+
+    color               : var(--primary);
+
+    font-size           : 30px;
+
+    transition          : var(--transition);
+
+}
+
+.video-testimonial-card:hover
+.testimonial-play{
+
+    background          : var(--secondary);
+
+    transform           : translate(-50%,-50%) scale(1.08);
+
+}
+
+
+/*==============================================================================
+VIDEO CONTENT
+==============================================================================*/
+
+.video-testimonial-content{
+
+    padding             : 28px;
+
+}
+
+.video-testimonial-content h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.video-testimonial-content p{
+
+    margin-bottom       : 20px;
+
+}
+
+
+/*==============================================================================
+GOOGLE REVIEW CTA
+==============================================================================*/
+
+.google-review-cta{
+
+    margin-top          : 90px;
+
+    background          : var(--primary);
+
+    color               : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 70px 50px;
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.google-review-cta h2{
+
+    color               : var(--white);
+
+    margin-bottom       : 20px;
+
+}
+
+.google-review-cta p{
+
+    color               : rgba(255,255,255,.90);
+
+    max-width           : 760px;
+
+    margin              : auto auto 35px;
+
+    font-size           : 1.08rem;
+
+}
+
+
+/*==============================================================================
+CTA BUTTONS
+==============================================================================*/
+
+.review-buttons{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    gap                 : 20px;
+
+    flex-wrap           : wrap;
+
+}
+
+.review-buttons .btn{
+
+    min-width           : 230px;
+
+}
+
+
+/*==============================================================================
+CUSTOMER SUCCESS
+==============================================================================*/
+
+.customer-success{
+
+    margin-top          : 90px;
+
+}
+
+.success-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap                 : 30px;
+
+}
+
+.success-card{
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    padding             : 35px;
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.success-card:hover{
+
+    transform           : translateY(-8px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.success-card i{
+
+    font-size           : 42px;
+
+    color               : var(--secondary);
+
+    margin-bottom       : 20px;
+
+}
+
+.success-card h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.success-card p{
+
+    margin-bottom       : 0;
+
+}
+
+
+/******************************************************************************
+END OF PART 4
+
+NEXT PART
+
+RESPONSIVE
+
+ANIMATIONS
+
+ACCESSIBILITY
+
+PRINT
+
+******************************************************************************/
+/******************************************************************************
+PART 5
+
+RESPONSIVE DESIGN
+ANIMATIONS
+ACCESSIBILITY
+PRINT
+LOADING STATES
+
+******************************************************************************/
+
+/*==============================================================================
+FADE-IN ANIMATION
+==============================================================================*/
+
+.testimonial-animate{
+
+    opacity             : 0;
+
+    transform           : translateY(40px);
+
+    transition          :
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+.testimonial-animate.show{
+
+    opacity             : 1;
+
+    transform           : translateY(0);
+
+}
+
+
+/*==============================================================================
+CARD HOVER ENHANCEMENTS
+==============================================================================*/
+
+.testimonial-card{
+
+    transition          :
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.testimonial-card:hover{
+
+    transform           : translateY(-8px);
+
+}
+
+
+/*==============================================================================
+FEATURED SECTION
+==============================================================================*/
+
+.featured-testimonial{
+
+    transition          :
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.featured-testimonial:hover{
+
+    transform           : translateY(-6px);
+
+}
+
+
+/*==============================================================================
+SUCCESS CARD
+==============================================================================*/
+
+.success-card{
+
+    transition          :
+        transform .35s ease,
+        box-shadow .35s ease;
+
+}
+
+.success-card:hover{
+
+    transform           : translateY(-8px);
+
+}
+
+
+/*==============================================================================
+LOADING PLACEHOLDER
+==============================================================================*/
+
+.testimonial-loading{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    min-height          : 350px;
+
+}
+
+.testimonial-spinner{
+
+    width               : 70px;
+
+    height              : 70px;
+
+    border              : 6px solid rgba(0,0,0,.08);
+
+    border-top          : 6px solid var(--secondary);
+
+    border-radius       : 50%;
+
+    animation           : testimonialSpin 1s linear infinite;
+
+}
+
+
+/*==============================================================================
+ACCESSIBILITY
+==============================================================================*/
+
+.review-buttons .btn:focus,
+
+.video-testimonial-card:focus,
+
+.testimonial-card:focus,
+
+.featured-testimonial:focus{
+
+    outline             : 3px solid var(--secondary);
+
+    outline-offset      : 4px;
+
+}
+
+
+/*==============================================================================
+TABLET
+==============================================================================*/
+
+@media(max-width:992px){
+
+.testimonial-intro-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.summary-grid{
+
+    grid-template-columns:1fr;
+
+    text-align:center;
+
+}
+
+.video-testimonial-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+.success-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+
+/*==============================================================================
+MOBILE
+==============================================================================*/
+
+@media(max-width:768px){
+
+.testimonial-hero{
+
+    min-height          : 320px;
+
+}
+
+.testimonial-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.video-testimonial-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.success-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+.review-buttons{
+
+    flex-direction      : column;
+
+}
+
+.review-buttons .btn{
+
+    width               : 100%;
+
+}
+
+.featured-testimonial{
+
+    padding             : 45px 30px;
+
+}
+
+.google-review-summary{
+
+    padding             : 35px 25px;
+
+}
+
+.summary-rating h2{
+
+    font-size           : 3rem;
+
+}
+
+}
+
+
+/*==============================================================================
+SMALL MOBILE
+==============================================================================*/
+
+@media(max-width:480px){
+
+.testimonial-hero h1{
+
+    font-size           : 2rem;
+
+}
+
+.testimonial-hero p{
+
+    font-size           : .95rem;
+
+}
+
+.google-rating-card{
+
+    padding             : 35px 25px;
+
+}
+
+.customer-info{
+
+    flex-direction      : column;
+
+    text-align          : center;
+
+}
+
+.customer-photo{
+
+    margin              : auto;
+
+}
+
+.featured-content .review-text{
+
+    font-size           : 1.05rem;
+
+    line-height         : 1.8;
+
+}
+
+.rating-value{
+
+    font-size           : 3rem;
+
+}
+
+}
+
+
+/*==============================================================================
+PRINT
+==============================================================================*/
+
+@media print{
+
+.testimonial-hero,
+
+.review-buttons,
+
+.video-testimonials,
+
+.google-review-cta{
+
+    display:none !important;
+
+}
+
+.testimonial-card,
+
+.success-card{
+
+    box-shadow:none;
+
+    border:1px solid #cccccc;
+
+}
+
+}
+
+
+/*==============================================================================
+KEYFRAMES
+==============================================================================*/
+
+@keyframes testimonialSpin{
+
+    from{
+
+        transform:rotate(0deg);
+
+    }
+
+    to{
+
+        transform:rotate(360deg);
+
+    }
+
+}
+
+
+/******************************************************************************
+END OF testimonials.css
+
+Approximate Size : 800+ Lines
+
+TESTIMONIALS MODULE COMPLETED
+
+******************************************************************************/  
+  
