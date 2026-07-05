@@ -1,0 +1,36 @@
+{
+    "Sunday":{
+        "name":"Royal Gold",
+        "accent":"#D4AF37"
+    },
+
+    "Monday":{
+        "name":"Emerald Green",
+        "accent":"#2E8B57"
+    },
+
+    "Tuesday":{
+        "name":"Ruby Red",
+        "accent":"#C0392B"
+    },
+
+    "Wednesday":{
+        "name":"Royal Blue",
+        "accent":"#1E5AA8"
+    },
+
+    "Thursday":{
+        "name":"Deep Orange",
+        "accent":"#D35400"
+    },
+
+    "Friday":{
+        "name":"Royal Purple",
+        "accent":"#7D3C98"
+    },
+
+    "Saturday":{
+        "name":"Charcoal Grey",
+        "accent":"#555555"
+    }
+}
