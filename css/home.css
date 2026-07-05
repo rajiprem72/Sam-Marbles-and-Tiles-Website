@@ -1,0 +1,1538 @@
+/******************************************************************************
+Project      : Sam Marbles & Granites
+Website      : https://sam-marbles.in
+File         : home.css
+Purpose      : Home Page Styles
+Section      : Welcome & Statistics
+Author       : Premanandhan Narayanan
+******************************************************************************/
+
+/*==============================================================================
+WELCOME SECTION
+==============================================================================*/
+
+.welcome-section{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    overflow            : hidden;
+
+}
+
+.welcome-grid{
+
+    display             : grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap                 : 70px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+WELCOME IMAGE
+==============================================================================*/
+
+.welcome-image{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.welcome-image img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+    transition          : .8s ease;
+
+}
+
+.welcome-image:hover img{
+
+    transform           : scale(1.06);
+
+}
+
+
+/*==============================================================================
+WELCOME CONTENT
+==============================================================================*/
+
+.welcome-content{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    justify-content     : center;
+
+}
+
+.welcome-content h2{
+
+    margin-bottom       : 25px;
+
+}
+
+.welcome-content p{
+
+    margin-bottom       : 22px;
+
+    font-size           : 1.05rem;
+
+    color               : var(--body-color);
+
+}
+
+.welcome-content .btn{
+
+    margin-top          : 10px;
+
+    align-self          : flex-start;
+
+}
+
+
+/*==============================================================================
+WELCOME DECORATION
+==============================================================================*/
+
+.welcome-section::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    top                 : -120px;
+
+    right               : -120px;
+
+    width               : 260px;
+
+    height              : 260px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.08);
+
+}
+
+
+/*==============================================================================
+STATISTICS SECTION
+==============================================================================*/
+
+.statistics-section{
+
+    position            : relative;
+
+    background          :
+    linear-gradient(
+        rgba(11,35,65,.94),
+        rgba(11,35,65,.94)
+    ),
+    url("../images/banners/statistics-bg.jpg");
+
+    background-size     : cover;
+
+    background-position : center;
+
+    background-repeat   : no-repeat;
+
+    color               : var(--white);
+
+}
+
+
+/*==============================================================================
+STATISTICS GRID
+==============================================================================*/
+
+.statistics-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap                 : 30px;
+
+}
+
+
+/*==============================================================================
+STAT CARD
+==============================================================================*/
+
+.stat-card{
+
+    text-align          : center;
+
+    padding             : 35px 20px;
+
+    background          : rgba(255,255,255,.06);
+
+    border              : 1px solid rgba(255,255,255,.10);
+
+    border-radius       : var(--radius-large);
+
+    backdrop-filter     : blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    transition          : var(--transition);
+
+}
+
+.stat-card:hover{
+
+    transform           : translateY(-10px);
+
+    background          : rgba(255,255,255,.12);
+
+}
+
+
+/*==============================================================================
+STAT ICON
+==============================================================================*/
+
+.stat-icon{
+
+    width               : 75px;
+
+    height              : 75px;
+
+    margin              : 0 auto 20px;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.15);
+
+}
+
+.stat-icon i{
+
+    font-size           : 34px;
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+STAT NUMBER
+==============================================================================*/
+
+.stat-number{
+
+    font-size           : clamp(2.6rem,4vw,3.8rem);
+
+    font-weight         : 700;
+
+    color               : var(--secondary);
+
+    line-height         : 1;
+
+    margin-bottom       : 12px;
+
+}
+
+
+/*==============================================================================
+STAT TITLE
+==============================================================================*/
+
+.stat-title{
+
+    color               : var(--white);
+
+    font-size           : 1rem;
+
+    letter-spacing      : .5px;
+
+}
+
+
+/*==============================================================================
+COMMON HOME SPACING
+==============================================================================*/
+
+.home-gap{
+
+    margin-top          : 80px;
+
+}
+
+
+/******************************************************************************
+END OF PART 1
+
+NEXT PART
+
+Why Choose Us
+
+About Preview
+
+******************************************************************************/
+/******************************************************************************
+PART 2
+
+WHY CHOOSE US
+ABOUT PREVIEW
+
+******************************************************************************/
+
+/*==============================================================================
+WHY CHOOSE US SECTION
+==============================================================================*/
+
+.why-us-section{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+
+/* Decorative Background */
+
+.why-us-section::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 320px;
+
+    height              : 320px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.06);
+
+    top                 : -120px;
+
+    left                : -120px;
+
+}
+
+
+/*==============================================================================
+WHY CHOOSE GRID
+==============================================================================*/
+
+.why-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+FEATURE CARD
+==============================================================================*/
+
+.feature-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    padding             : 40px 30px;
+
+    text-align          : center;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+    overflow            : hidden;
+
+}
+
+
+/* Gold Top Border */
+
+.feature-card::before{
+
+    content             : "";
+
+    position            : absolute;
+
+    top                 : 0;
+
+    left                : 0;
+
+    width               : 100%;
+
+    height              : 5px;
+
+    background          : var(--secondary);
+
+}
+
+
+/* Hover */
+
+.feature-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+FEATURE ICON
+==============================================================================*/
+
+.feature-icon{
+
+    width               : 85px;
+
+    height              : 85px;
+
+    margin              : 0 auto 25px;
+
+    border-radius       : 50%;
+
+    display             : flex;
+
+    align-items         : center;
+
+    justify-content     : center;
+
+    background          : rgba(212,175,55,.15);
+
+}
+
+.feature-icon i{
+
+    font-size           : 38px;
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+FEATURE TITLE
+==============================================================================*/
+
+.feature-card h3{
+
+    margin-bottom       : 18px;
+
+}
+
+
+/*==============================================================================
+FEATURE DESCRIPTION
+==============================================================================*/
+
+.feature-card p{
+
+    color               : var(--body-color);
+
+    margin-bottom       : 0;
+
+}
+
+
+/*==============================================================================
+ABOUT PREVIEW SECTION
+==============================================================================*/
+
+.about-preview-section{
+
+    position            : relative;
+
+    background          : var(--white);
+
+}
+
+
+/*==============================================================================
+ABOUT GRID
+==============================================================================*/
+
+.about-grid{
+
+    display             : grid;
+
+    grid-template-columns:420px 1fr;
+
+    gap                 : 70px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+ABOUT IMAGE
+==============================================================================*/
+
+.about-image{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.about-image img{
+
+    width               : 100%;
+
+    transition          : .7s ease;
+
+}
+
+.about-image:hover img{
+
+    transform           : scale(1.05);
+
+}
+
+
+/*==============================================================================
+EXPERIENCE BADGE
+==============================================================================*/
+
+.experience-badge{
+
+    position            : absolute;
+
+    right               : -20px;
+
+    bottom              : 30px;
+
+    background          : var(--secondary);
+
+    color               : var(--primary);
+
+    padding             : 18px 25px;
+
+    border-radius       : var(--radius-medium);
+
+    text-align          : center;
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.experience-badge h3{
+
+    margin              : 0;
+
+    font-size           : 2rem;
+
+    color               : var(--primary);
+
+}
+
+.experience-badge span{
+
+    display             : block;
+
+    font-size           : .9rem;
+
+    font-weight         : 600;
+
+}
+
+
+/*==============================================================================
+ABOUT CONTENT
+==============================================================================*/
+
+.about-content{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    justify-content     : center;
+
+}
+
+.about-content h2{
+
+    margin-bottom       : 20px;
+
+}
+
+.about-content p{
+
+    margin-bottom       : 20px;
+
+    font-size           : 1.05rem;
+
+}
+
+.about-content .btn{
+
+    margin-top          : 15px;
+
+    align-self          : flex-start;
+
+}
+
+
+/******************************************************************************
+END OF PART 2
+
+NEXT PART
+
+OUR COLLECTION
+
+PRODUCT CARDS
+
+IMAGE HOVER
+
+******************************************************************************/
+
+/******************************************************************************
+PART 3
+
+OUR COLLECTION
+PRODUCT CARDS
+IMAGE HOVER EFFECTS
+
+******************************************************************************/
+
+/*==============================================================================
+OUR COLLECTION SECTION
+==============================================================================*/
+
+.collection-section{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+
+/* Decorative Element */
+
+.collection-section::after{
+
+    content             : "";
+
+    position            : absolute;
+
+    width               : 260px;
+
+    height              : 260px;
+
+    border-radius       : 50%;
+
+    background          : rgba(212,175,55,.06);
+
+    right               : -100px;
+
+    bottom              : -100px;
+
+}
+
+
+/*==============================================================================
+PRODUCT GRID
+==============================================================================*/
+
+.product-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+PRODUCT CARD
+==============================================================================*/
+
+.product-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    border-radius       : var(--radius-large);
+
+    overflow            : hidden;
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.product-card:hover{
+
+    transform           : translateY(-12px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+PRODUCT IMAGE
+==============================================================================*/
+
+.product-image{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    height              : 280px;
+
+}
+
+.product-image img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+    transition          : .7s ease;
+
+}
+
+.product-card:hover .product-image img{
+
+    transform           : scale(1.08);
+
+}
+
+
+/*==============================================================================
+IMAGE OVERLAY
+==============================================================================*/
+
+.product-overlay{
+
+    position            : absolute;
+
+    inset               : 0;
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    background          : rgba(11,35,65,.70);
+
+    opacity             : 0;
+
+    transition          : var(--transition);
+
+}
+
+.product-card:hover .product-overlay{
+
+    opacity             : 1;
+
+}
+
+.product-overlay a{
+
+    color               : var(--white);
+
+    background          : var(--secondary);
+
+    padding             : 14px 26px;
+
+    border-radius       : 999px;
+
+    font-weight         : 600;
+
+}
+
+.product-overlay a:hover{
+
+    background          : var(--white);
+
+    color               : var(--primary);
+
+}
+
+
+/*==============================================================================
+PRODUCT CONTENT
+==============================================================================*/
+
+.product-content{
+
+    padding             : 28px;
+
+}
+
+.product-content h3{
+
+    margin-bottom       : 15px;
+
+}
+
+.product-content p{
+
+    margin-bottom       : 22px;
+
+}
+
+
+/*==============================================================================
+PRODUCT TAG
+==============================================================================*/
+
+.product-tag{
+
+    display             : inline-block;
+
+    margin-bottom       : 18px;
+
+    padding             : 6px 14px;
+
+    background          : rgba(212,175,55,.15);
+
+    color               : var(--primary);
+
+    border-radius       : 999px;
+
+    font-size           : .85rem;
+
+    font-weight         : 600;
+
+}
+
+
+/*==============================================================================
+VIEW ALL BUTTON
+==============================================================================*/
+
+.collection-footer{
+
+    margin-top          : 60px;
+
+    text-align          : center;
+
+}
+
+
+/******************************************************************************
+END OF PART 3
+
+NEXT PART
+
+FEATURED PARTNER
+
+DZINER'S KITCHEN
+
+VIRTUAL SHOWROOM
+
+CALL TO ACTION
+
+******************************************************************************/
+
+/******************************************************************************
+PART 4
+
+FEATURED PARTNER
+DZINER'S KITCHEN
+VIRTUAL SHOWROOM
+CALL TO ACTION
+
+******************************************************************************/
+
+/*==============================================================================
+FEATURED PARTNER SECTION
+==============================================================================*/
+
+.featured-partner-section{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    overflow            : hidden;
+
+}
+
+.partner-grid{
+
+    display             : grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap                 : 70px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+PARTNER IMAGE
+==============================================================================*/
+
+.partner-image{
+
+    position            : relative;
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.partner-image img{
+
+    width               : 100%;
+
+    height              : 100%;
+
+    object-fit          : cover;
+
+    transition          : .8s ease;
+
+}
+
+.partner-image:hover img{
+
+    transform           : scale(1.06);
+
+}
+
+
+/*==============================================================================
+PARTNER CONTENT
+==============================================================================*/
+
+.partner-content{
+
+    display             : flex;
+
+    flex-direction      : column;
+
+    justify-content     : center;
+
+}
+
+.partner-content h2{
+
+    margin-bottom       : 20px;
+
+}
+
+.partner-content p{
+
+    margin-bottom       : 20px;
+
+    font-size           : 1.05rem;
+
+}
+
+.partner-content ul{
+
+    margin              : 20px 0 30px;
+
+}
+
+.partner-content li{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 12px;
+
+    margin-bottom       : 15px;
+
+    color               : var(--body-color);
+
+}
+
+.partner-content li i{
+
+    color               : var(--secondary);
+
+}
+
+
+/*==============================================================================
+VIRTUAL SHOWROOM
+==============================================================================*/
+
+.virtual-showroom-section{
+
+    position            : relative;
+
+    background:
+    linear-gradient(
+        rgba(11,35,65,.88),
+        rgba(11,35,65,.88)
+    ),
+    url("../images/banners/showroom-bg.jpg");
+
+    background-size     : cover;
+
+    background-position : center;
+
+    background-attachment:fixed;
+
+    color               : var(--white);
+
+    text-align          : center;
+
+}
+
+.virtual-showroom-content{
+
+    max-width           : 850px;
+
+    margin              : auto;
+
+}
+
+.virtual-showroom-content h2{
+
+    color               : var(--white);
+
+    margin-bottom       : 25px;
+
+}
+
+.virtual-showroom-content p{
+
+    color               : rgba(255,255,255,.90);
+
+    margin-bottom       : 40px;
+
+    font-size           : 1.1rem;
+
+}
+
+
+/*==============================================================================
+VIDEO BUTTON
+==============================================================================*/
+
+.video-play{
+
+    width               : 90px;
+
+    height              : 90px;
+
+    display             : inline-flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    border-radius       : 50%;
+
+    background          : var(--secondary);
+
+    color               : var(--primary);
+
+    font-size           : 34px;
+
+    transition          : var(--transition);
+
+    margin-bottom       : 35px;
+
+}
+
+.video-play:hover{
+
+    transform           : scale(1.08);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+
+/*==============================================================================
+CALL TO ACTION
+==============================================================================*/
+
+.cta-section{
+
+    background          : var(--secondary);
+
+    padding             : 90px 0;
+
+}
+
+.cta-box{
+
+    text-align          : center;
+
+    max-width           : 900px;
+
+    margin              : auto;
+
+}
+
+.cta-box h2{
+
+    color               : var(--primary);
+
+    margin-bottom       : 20px;
+
+}
+
+.cta-box p{
+
+    color               : var(--primary);
+
+    font-size           : 1.1rem;
+
+    margin-bottom       : 40px;
+
+}
+
+.cta-buttons{
+
+    display             : flex;
+
+    justify-content     : center;
+
+    gap                 : 20px;
+
+    flex-wrap           : wrap;
+
+}
+
+
+/*==============================================================================
+CTA BUTTON OVERRIDE
+==============================================================================*/
+
+.cta-section .btn-primary{
+
+    background          : var(--primary);
+
+    color               : var(--white);
+
+}
+
+.cta-section .btn-primary:hover{
+
+    background          : var(--white);
+
+    color               : var(--primary);
+
+}
+
+.cta-section .btn-secondary{
+
+    background          : var(--white);
+
+    color               : var(--primary);
+
+}
+
+.cta-section .btn-secondary:hover{
+
+    background          : transparent;
+
+    border              : 2px solid var(--primary);
+
+    color               : var(--primary);
+
+}
+
+
+/******************************************************************************
+END OF PART 4
+
+NEXT PART
+
+TESTIMONIALS PREVIEW
+
+GOOGLE REVIEW CTA
+
+LOCATION PREVIEW
+
+HOME PAGE HELPERS
+
+******************************************************************************/
+/******************************************************************************
+PART 5
+
+TESTIMONIALS PREVIEW
+LOCATION PREVIEW
+HOME PAGE UTILITIES
+
+******************************************************************************/
+
+/*==============================================================================
+TESTIMONIALS SECTION
+==============================================================================*/
+
+.testimonials-preview{
+
+    position            : relative;
+
+    background          : var(--light);
+
+    overflow            : hidden;
+
+}
+
+.testimonial-grid{
+
+    display             : grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap                 : 35px;
+
+}
+
+
+/*==============================================================================
+TESTIMONIAL CARD
+==============================================================================*/
+
+.testimonial-card{
+
+    position            : relative;
+
+    background          : var(--white);
+
+    padding             : 35px;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-small);
+
+    transition          : var(--transition);
+
+}
+
+.testimonial-card:hover{
+
+    transform           : translateY(-10px);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.testimonial-card::before{
+
+    content             : "❝";
+
+    position            : absolute;
+
+    top                 : 18px;
+
+    right               : 25px;
+
+    font-size           : 70px;
+
+    color               : rgba(212,175,55,.15);
+
+}
+
+
+/*==============================================================================
+GOOGLE STARS
+==============================================================================*/
+
+.review-stars{
+
+    color               : #FFD700;
+
+    font-size           : 20px;
+
+    margin-bottom       : 18px;
+
+}
+
+
+/*==============================================================================
+REVIEW TEXT
+==============================================================================*/
+
+.review-text{
+
+    font-style          : italic;
+
+    margin-bottom       : 25px;
+
+    line-height         : 1.8;
+
+}
+
+
+/*==============================================================================
+CUSTOMER DETAILS
+==============================================================================*/
+
+.customer{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 15px;
+
+}
+
+.customer-avatar{
+
+    width               : 60px;
+
+    height              : 60px;
+
+    border-radius       : 50%;
+
+    background          : var(--secondary);
+
+    display             : flex;
+
+    justify-content     : center;
+
+    align-items         : center;
+
+    color               : var(--primary);
+
+    font-size           : 24px;
+
+    font-weight         : 700;
+
+}
+
+.customer-details h4{
+
+    margin              : 0;
+
+}
+
+.customer-details span{
+
+    color               : var(--grey);
+
+    font-size           : .9rem;
+
+}
+
+
+/*==============================================================================
+VIEW ALL REVIEWS BUTTON
+==============================================================================*/
+
+.review-footer{
+
+    text-align          : center;
+
+    margin-top          : 55px;
+
+}
+
+
+/*==============================================================================
+LOCATION SECTION
+==============================================================================*/
+
+.location-preview{
+
+    background          : var(--white);
+
+}
+
+.location-grid{
+
+    display             : grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap                 : 60px;
+
+    align-items         : center;
+
+}
+
+
+/*==============================================================================
+LOCATION CONTENT
+==============================================================================*/
+
+.location-content h2{
+
+    margin-bottom       : 20px;
+
+}
+
+.location-content p{
+
+    margin-bottom       : 18px;
+
+}
+
+.location-list{
+
+    margin              : 25px 0;
+
+}
+
+.location-list li{
+
+    display             : flex;
+
+    align-items         : center;
+
+    gap                 : 15px;
+
+    margin-bottom       : 18px;
+
+}
+
+.location-list i{
+
+    color               : var(--secondary);
+
+    font-size           : 22px;
+
+}
+
+
+/*==============================================================================
+MAP
+==============================================================================*/
+
+.location-map{
+
+    overflow            : hidden;
+
+    border-radius       : var(--radius-large);
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.location-map iframe{
+
+    width               : 100%;
+
+    height              : 450px;
+
+    border              : 0;
+
+}
+
+
+/*==============================================================================
+HOME PAGE HELPERS
+==============================================================================*/
+
+.section-divider{
+
+    width               : 90px;
+
+    height              : 4px;
+
+    background          : var(--secondary);
+
+    margin              : 25px auto;
+
+    border-radius       : 999px;
+
+}
+
+.text-highlight{
+
+    color               : var(--secondary);
+
+}
+
+.shadow-hover{
+
+    transition          : var(--transition);
+
+}
+
+.shadow-hover:hover{
+
+    box-shadow          : var(--shadow-large);
+
+}
+
+.zoom-hover{
+
+    overflow            : hidden;
+
+}
+
+.zoom-hover img{
+
+    transition          : .7s ease;
+
+}
+
+.zoom-hover:hover img{
+
+    transform           : scale(1.08);
+
+}
+
+
+/******************************************************************************
+END OF home.css
+
+Approximate Size : 700 Lines
+
+HOME PAGE CSS COMPLETED
+
+******************************************************************************/
