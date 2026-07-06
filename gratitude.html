@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0">
+
+<title>For Victor...</title>
+
+<meta name="robots"
+      content="noindex,nofollow,noarchive">
+
+<meta name="theme-color"
+      content="#071A35">
+
+<style>
+
+/*************************************************
+
+GRATITUDE PAGE
+
+Created with Love
+
+For
+
+Victor
+
+*************************************************/
+
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html,
+body{
+
+    width:100%;
+    height:100%;
+
+    overflow:hidden;
+
+    font-family:
+        "Georgia",
+        "Times New Roman",
+        serif;
+
+}
+
+
+/*************************************************
+
+BACKGROUND
+
+*************************************************/
+
+
+body{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(circle at top,
+
+    #264b7f,
+
+    #122544,
+
+    #08111f,
+
+    #04080f);
+
+    color:white;
+
+    position:relative;
+
+}
+
+
+/*************************************************
+
+FLOATING STARS
+
+*************************************************/
+
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background-image:
+
+    radial-gradient(#ffffff99 1px,transparent 1px),
+
+    radial-gradient(#ffd16666 1px,transparent 1px),
+
+    radial-gradient(#ffffff55 1px,transparent 1px);
+
+    background-size:
+
+    220px 220px,
+
+    180px 180px,
+
+    300px 300px;
+
+    animation:
+
+    starsMove 80s linear infinite;
+
+    opacity:.45;
+
+}
+
+
+@keyframes starsMove{
+
+    from{
+
+        transform:translateY(0px);
+
+    }
+
+    to{
+
+        transform:translateY(-300px);
+
+    }
+
+}
+
+
+/*************************************************
+
+MAIN CONTAINER
+
+*************************************************/
+
+
+.container{
+
+    width:min(900px,90%);
+
+    text-align:center;
+
+    z-index:10;
+
+    position:relative;
+
+}
+
+
+/*************************************************
+
+DEAR VICTOR
+
+*************************************************/
+
+
+#intro{
+
+    font-size:48px;
+
+    color:#FFD166;
+
+    letter-spacing:2px;
+
+    margin-bottom:70px;
+
+    opacity:0;
+
+}
+
+
+/*************************************************
+
+MESSAGE
+
+*************************************************/
+
+
+#message{
+
+    font-size:40px;
+
+    line-height:1.9;
+
+    font-weight:400;
+
+    color:#F8F8F8;
+
+    min-height:420px;
+
+}
+
+
+/*************************************************
+
+SIGNATURE
+
+*************************************************/
+
+
+#signature{
+
+    margin-top:80px;
+
+    font-size:30px;
+
+    color:#FFD166;
+
+    opacity:0;
+
+    line-height:1.8;
+
+}
+
+
+/*************************************************
+
+MUSIC BUTTON
+
+*************************************************/
+
+
+.music{
+
+    position:fixed;
+
+    top:25px;
+
+    right:25px;
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    border:none;
+
+    cursor:pointer;
+
+    background:#FFD166;
+
+    color:#071A35;
+
+    font-size:22px;
+
+    box-shadow:
+
+    0 0 25px rgba(255,209,102,.5);
+
+}
+
+
+.music:hover{
+
+    transform:scale(1.08);
+
+}
+
+
+/*************************************************
+
+WORD ANIMATION
+
+*************************************************/
+
+
+.word{
+
+    opacity:0;
+
+    transition:opacity .6s ease;
+
+}
+
+
+.word.show{
+
+    opacity:1;
+
+}
+
+
+/*************************************************
+
+RESPONSIVE
+
+*************************************************/
+
+
+@media(max-width:768px){
+
+#intro{
+
+    font-size:34px;
+
+}
+
+#message{
+
+    font-size:24px;
+
+    line-height:1.8;
+
+}
+
+#signature{
+
+    font-size:22px;
+
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+
+<div class="container">
+
+    <div id="intro">
+
+        Dear Victor...
+
+    </div>
+
+
+    <div id="message">
+
+    </div>
+
+
+    <div id="signature">
+
+        With Love and Gratitude,<br><br>
+
+        Premanandhan Narayanan
+
+    </div>
+
+</div>
+
+
+<button
+class="music"
+id="musicButton">
+
+🔊
+
+</button>
+
+
+<audio
+id="bgMusic"
+loop>
+
+<source
+src="audio.mp3"
+type="audio/mpeg">
+
+</audio>
+
+
+<script>
+
+/*************************************************
+
+PART 1
+
+INTRODUCTION
+
+MESSAGE
+
+WORDS
+
+PART 2
+
+WORD BY WORD ENGINE
+
+*************************************************/
+
+
+const gratitudeMessage = `
+
+Some people save lives through their profession.
+
+Some save lives through their compassion.
+
+Victor, you did both.
+
+This website is my humble expression of gratitude to a friend whose kindness I will cherish for the rest of my life.
+
+`;
+
+</script>
+
+</body>
+
+</html>
