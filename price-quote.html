@@ -142,7 +142,7 @@ CSS
       media="screen and (min-width:769px)">
 
 <link rel="stylesheet"
-href="css/template.css">
+href="css/price-quote.css">
  
 
 </head>
@@ -271,21 +271,140 @@ href="css/template.css">
 </section>
 
    <main>
+		<section class="quote-section">
 
+    <div class="section-title">
 
+        <h2>Instant Price Quote</h2>
 
+        <h3>
 
+            Select the marble, granite or quartzite products you are interested in
+            and receive an instant quotation by email.
 
+        </h3>
 
+    </div>
 
-  <h2 align=center>UNDER CONSTRUCTION</h2>
+    <form id="quoteForm">
 
+        <div class="form-group">
 
+            <label>Name *</label>
 
+            <input type="text"
+                   name="name"
+                   required>
 
+        </div>
 
-       
+        <div class="form-group">
 
+            <label>Mobile Number *</label>
+
+            <input type="tel"
+                   name="mobile"
+                   required>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Email ID *</label>
+
+            <input type="email"
+                   name="email"
+                   required>
+
+        </div>
+
+        <h3>Marbles</h3>
+
+        <div class="checkbox-grid">
+
+            <label><input type="checkbox" value="INDIAN PEGASUS WHITE"> Indian Pegasus White</label>
+
+            <label><input type="checkbox" value="WONDER WHITE MARBLE"> Wonder White Marble</label>
+
+            <label><input type="checkbox" value="DHARMETA MARBLE"> Dharmeta Marble</label>
+
+            <label><input type="checkbox" value="MORWAD WHITE MARBLE"> Morwad White Marble</label>
+
+            <label><input type="checkbox" value="KATNI MARBLE"> Katni Marble</label>
+
+            <label><input type="checkbox" value="WONDER MARBLE"> Wonder Marble</label>
+
+            <label><input type="checkbox" value="SAWAR MARBLE"> Sawar Marble</label>
+
+            <label><input type="checkbox" value="RAYMOND WHITE"> Raymond White</label>
+
+            <label><input type="checkbox" value="PINK MARBLE"> Pink Marble</label>
+
+            <label><input type="checkbox" value="GREEN MARBLE"> Green Marble</label>
+
+            <label><input type="checkbox" value="GREEN MARBLE LAPOTRA"> Green Marble Lapotra</label>
+
+        </div>
+
+        <h3>Granites</h3>
+
+        <div class="checkbox-grid">
+
+            <label><input type="checkbox" value="BLACK GALAXY"> Black Galaxy</label>
+
+            <label><input type="checkbox" value="TAN BROWN"> Tan Brown</label>
+
+            <label><input type="checkbox" value="APPLE GREEN"> Apple Green</label>
+
+            <label><input type="checkbox" value="OCEAN WHITE"> Ocean White</label>
+
+            <label><input type="checkbox" value="GEM RED"> Gem Red</label>
+
+            <label><input type="checkbox" value="CLASSIC RED"> Classic Red</label>
+
+            <label><input type="checkbox" value="LAKSHMI / LAKKA RED"> Lakshmi / Lakka Red</label>
+
+            <label><input type="checkbox" value="Z-BROWN"> Z-Brown</label>
+
+            <label><input type="checkbox" value="COIN BLACK LAPOTRA"> Coin Black Lapotra</label>
+
+            <label><input type="checkbox" value="STEEL GREY"> Steel Grey</label>
+
+            <label><input type="checkbox" value="TAN BROWN LAPOTRA"> Tan Brown Lapotra</label>
+
+            <label><input type="checkbox" value="APPLE GREEN LAPOTRA"> Apple Green Lapotra</label>
+
+            <label><input type="checkbox" value="R-BLACK LAPOTRA"> R-Black Lapotra</label>
+
+            <label><input type="checkbox" value="DAISY GREEN"> Daisy Green</label>
+
+            <label><input type="checkbox" value="BLACK GRANITE"> Black Granite</label>
+
+        </div>
+
+        <h3>Quartzite</h3>
+
+        <div class="checkbox-grid">
+
+            <label>
+
+                <input type="checkbox" value="QUARTZITE">
+
+                Quartzite
+
+            </label>
+
+        </div>
+
+        <button type="submit">
+
+            Get Price Quote
+
+        </button>
+
+    </form>
+
+</section>
     </main>
 
   <footer>
@@ -294,7 +413,6 @@ href="css/template.css">
     </div>
 </footer>
 
-<script src="js/mobile.js"></script>
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
@@ -320,6 +438,47 @@ href="css/template.css">
   ]
 }
 </script>
+<script>
+document
+    .getElementById("quoteForm")
+    .addEventListener("submit", async function (e) {
+
+        e.preventDefault();
+
+        const checked = [...document.querySelectorAll(
+            'input[type="checkbox"]:checked'
+        )];
+
+        const items = checked.map(x => x.value);
+
+        const payload = {
+
+            name: this.name.value,
+
+            mobile: this.mobile.value,
+
+            email: this.email.value,
+
+            items
+
+        };
+
+        await fetch(
+            "YOUR_WEBAPP_URL",
+            {
+                method: "POST",
+                body: JSON.stringify(payload)
+            }
+        );
+
+        alert(
+            "Price quote sent to your email."
+        );
+
+        this.reset();
+});
+</script>	
+<script src="js/mobile.js"></script>
 
 </body>
 </html>  
