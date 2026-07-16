@@ -1,0 +1,386 @@
+/* ==========================================================
+   SAM MARBLES & GRANITES
+   price-quote.css
+========================================================== */
+
+:root {
+
+    --primary-blue: #0d6efd;
+    --secondary-blue: #0a4fb5;
+    --dark-blue: #052c65;
+    --light-blue: #f5f9ff;
+
+    --white: #ffffff;
+    --text-color: #444444;
+
+    --border-color: #d7e3f7;
+
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   GLOBAL
+========================================================== */
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Segoe UI", sans-serif;
+    background: #f8f9fc;
+    color: var(--text-color);
+    line-height: 1.7;
+}
+
+section {
+
+    padding: 70px 5%;
+}
+
+/* ==========================================================
+   HEADER
+========================================================== */
+
+.quote-section {
+
+    max-width: 1300px;
+    margin: auto;
+}
+
+.section-title {
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title h2 {
+
+    font-size: 3rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.section-title h3 {
+
+    color: var(--primary-blue);
+    font-size: 1.15rem;
+    max-width: 900px;
+    margin: auto;
+    font-weight: 500;
+}
+
+/* ==========================================================
+   FORM CONTAINER
+========================================================== */
+
+#quoteForm {
+
+    background: var(--white);
+
+    padding: 50px;
+
+    border-radius: 20px;
+
+    box-shadow: var(--shadow);
+}
+
+/* ==========================================================
+   INPUT FIELDS
+========================================================== */
+
+.form-group {
+
+    margin-bottom: 25px;
+}
+
+.form-group label {
+
+    display: block;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    color: var(--dark-blue);
+
+    margin-bottom: 10px;
+}
+
+.form-group input {
+
+    width: 100%;
+
+    padding: 15px 18px;
+
+    border: 1px solid var(--border-color);
+
+    border-radius: 10px;
+
+    font-size: 1rem;
+
+    outline: none;
+
+    transition: 0.3s ease;
+}
+
+.form-group input:focus {
+
+    border-color: var(--primary-blue);
+
+    box-shadow: 0 0 0 4px rgba(13, 110, 253, 0.15);
+}
+
+/* ==========================================================
+   CATEGORY HEADINGS
+========================================================== */
+
+#quoteForm h3 {
+
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    color: var(--dark-blue);
+
+    font-size: 1.7rem;
+
+    border-left: 6px solid var(--primary-blue);
+
+    padding-left: 15px;
+}
+
+/* ==========================================================
+   CHECKBOX GRID
+========================================================== */
+
+.checkbox-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.checkbox-grid label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    background: var(--light-blue);
+
+    padding: 15px;
+
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+
+    border: 1px solid transparent;
+
+    min-height: 70px;
+}
+
+.checkbox-grid label:hover {
+
+    border-color: var(--primary-blue);
+
+    transform: translateY(-2px);
+}
+
+.checkbox-grid input[type="checkbox"] {
+
+    width: 18px;
+    height: 18px;
+
+    accent-color: var(--primary-blue);
+
+    cursor: pointer;
+}
+
+/* ==========================================================
+   SUBMIT BUTTON
+========================================================== */
+
+#quoteForm button {
+
+    width: 100%;
+
+    margin-top: 20px;
+
+    padding: 18px;
+
+    border: none;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+    );
+
+    color: var(--white);
+
+    font-size: 1.1rem;
+
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: 0.3s ease;
+}
+
+#quoteForm button:hover {
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(13, 110, 253, 0.25);
+}
+
+/* ==========================================================
+   NOTE BOX
+========================================================== */
+
+.quote-note {
+
+    margin-top: 40px;
+
+    background: #fff9e6;
+
+    border-left: 5px solid #f4b400;
+
+    padding: 25px;
+
+    border-radius: 10px;
+}
+
+.quote-note h4 {
+
+    color: var(--dark-blue);
+
+    margin-bottom: 15px;
+}
+
+.quote-note ul {
+
+    padding-left: 20px;
+}
+
+.quote-note li {
+
+    margin-bottom: 10px;
+}
+
+/* ==========================================================
+   TABLET
+========================================================== */
+
+@media (max-width: 992px) {
+
+    section {
+
+        padding: 60px 5%;
+    }
+
+    .section-title h2 {
+
+        font-size: 2.4rem;
+    }
+
+    .checkbox-grid {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #quoteForm {
+
+        padding: 35px;
+    }
+}
+
+/* ==========================================================
+   MOBILE
+========================================================== */
+
+@media (max-width: 768px) {
+
+    section {
+
+        padding: 45px 4%;
+    }
+
+    .section-title h2 {
+
+        font-size: 2rem;
+    }
+
+    .section-title h3 {
+
+        font-size: 1rem;
+    }
+
+    .checkbox-grid {
+
+        grid-template-columns: 1fr;
+    }
+
+    #quoteForm {
+
+        padding: 25px;
+    }
+
+    #quoteForm h3 {
+
+        font-size: 1.4rem;
+    }
+
+    .checkbox-grid label {
+
+        font-size: 0.95rem;
+        min-height: auto;
+    }
+
+    #quoteForm button {
+
+        font-size: 1rem;
+        padding: 16px;
+    }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .section-title h2 {
+
+        font-size: 1.7rem;
+    }
+
+    .section-title h3 {
+
+        font-size: 0.95rem;
+    }
+
+    #quoteForm {
+
+        padding: 20px;
+    }
+
+    .form-group input {
+
+        padding: 14px;
+    }
+}
