@@ -1,0 +1,314 @@
+/* ==========================================================
+   SAM MARBLES & GRANITES
+   granites.css
+   Theme: Blue & White
+========================================================== */
+
+:root {
+    --primary-blue: #0d6efd;
+    --secondary-blue: #0a4fb5;
+    --dark-blue: #052c65;
+    --light-blue: #f4f8ff;
+    --white: #ffffff;
+    --text-color: #444444;
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ==========================================================
+   RESET
+========================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--white);
+    color: var(--text-color);
+    line-height: 1.8;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ==========================================================
+   COMMON SECTION STYLES
+========================================================== */
+
+section {
+    padding: 70px 8%;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 2.8rem;
+    color: var(--dark-blue);
+    margin-bottom: 15px;
+}
+
+.section-title h3 {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+    font-weight: 500;
+    max-width: 900px;
+    margin: auto;
+}
+
+.section-description {
+    max-width: 1100px;
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.05rem;
+    color: var(--text-color);
+}
+
+/* ==========================================================
+   HERO SECTION
+========================================================== */
+
+.granites-hero {
+    background: linear-gradient(
+        135deg,
+        var(--light-blue),
+        var(--white)
+    );
+}
+
+/* ==========================================================
+   GRANITE COLLECTION
+========================================================== */
+
+.granites-collection {
+    background: var(--white);
+}
+
+.granite-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.granite-card {
+    display: flex;
+    align-items: center;
+    gap: 35px;
+
+    background: var(--light-blue);
+
+    border-radius: 18px;
+
+    overflow: hidden;
+
+    box-shadow: var(--shadow);
+
+    transition: 0.3s ease;
+}
+
+.granite-card:hover {
+    transform: translateY(-6px);
+}
+
+.granite-card:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.granite-card img {
+    width: 45%;
+    height: 320px;
+    object-fit: cover;
+}
+
+.granite-content {
+    width: 55%;
+    padding: 35px;
+}
+
+.granite-content h2 {
+    color: var(--dark-blue);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.granite-content p {
+    font-size: 1.05rem;
+    line-height: 2;
+    text-align: justify;
+}
+
+/* ==========================================================
+   CONTACT SECTION
+========================================================== */
+
+.contact-cta {
+    background: var(--light-blue);
+}
+
+.contact-box {
+    max-width: 900px;
+    margin: auto;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    background: linear-gradient(
+        135deg,
+        var(--primary-blue),
+        var(--secondary-blue)
+    );
+
+    color: var(--white);
+
+    box-shadow: var(--shadow);
+}
+
+.contact-box h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.contact-box p {
+    font-size: 1.05rem;
+    margin-bottom: 30px;
+}
+
+.contact-btn {
+    display: inline-block;
+
+    padding: 14px 35px;
+
+    background: var(--white);
+
+    color: var(--primary-blue);
+
+    text-decoration: none;
+
+    font-size: 1rem;
+
+    font-weight: 600;
+
+    border-radius: 8px;
+
+    transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: var(--dark-blue);
+    color: var(--white);
+}
+
+/* ==========================================================
+   TABLET VIEW
+========================================================== */
+
+@media (max-width: 992px) {
+
+    section {
+        padding: 60px 6%;
+    }
+
+    .section-title h2 {
+        font-size: 2.3rem;
+    }
+
+    .granite-card {
+        flex-direction: column !important;
+    }
+
+    .granite-card img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .granite-content {
+        width: 100%;
+        padding: 30px;
+    }
+
+    .granite-content h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==========================================================
+   MOBILE VIEW
+========================================================== */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .section-title h3 {
+        font-size: 1.05rem;
+    }
+
+    .granite-card img {
+        height: 240px;
+    }
+
+    .granite-content {
+        padding: 25px;
+    }
+
+    .granite-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .granite-content p {
+        text-align: left;
+        font-size: 1rem;
+    }
+
+    .contact-box {
+        padding: 40px 25px;
+    }
+
+    .contact-box h2 {
+        font-size: 1.8rem;
+    }
+}
+
+/* ==========================================================
+   SMALL MOBILE
+========================================================== */
+
+@media (max-width: 480px) {
+
+    .section-title h2 {
+        font-size: 1.7rem;
+    }
+
+    .granite-card img {
+        height: 200px;
+    }
+
+    .granite-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .contact-box h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        text-align: center;
+    }
+}
