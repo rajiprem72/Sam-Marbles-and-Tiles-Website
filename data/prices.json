@@ -1,0 +1,37 @@
+{
+    "marbles": {
+        "INDIAN PEGASUS WHITE": "Rs.250/Sq.Ft",
+        "WONDER WHITE MARBLE": "Rs.130-180/Sq.Ft",
+        "DHARMETA MARBLE": "Rs.110-130/Sq.Ft",
+        "MORWAD WHITE MARBLE": "Rs.150-250/Sq.Ft",
+        "KATNI MARBLE": "Rs.110-150/Sq.Ft",
+        "WONDER MARBLE": "Rs.125-175/Sq.Ft",
+        "SAWAR MARBLE": "Rs.70-90/Sq.Ft",
+        "RAYMOND WHITE": "Rs.75-90/Sq.Ft",
+        "PINK MARBLE": "Rs.70-80/Sq.Ft",
+        "GREEN MARBLE": "Rs.90-110/Sq.Ft",
+        "GREEN MARBLE LAPOTRA": "Rs.125/Sq.Ft"
+    },
+
+    "granites": {
+        "BLACK GALAXY": "Rs.175/Sq.Ft",
+        "TAN BROWN": "Rs.100/Sq.Ft",
+        "APPLE GREEN": "Rs.120/Sq.Ft",
+        "OCEAN WHITE": "Rs.100/Sq.Ft",
+        "GEM RED": "Rs.150/Sq.Ft",
+        "CLASSIC RED": "Rs.150/Sq.Ft",
+        "LAKSHMI / LAKKA RED": "Rs.260/Sq.Ft",
+        "Z-BROWN": "Rs.150/Sq.Ft",
+        "COIN BLACK LAPOTRA": "Rs.115/Sq.Ft",
+        "STEEL GREY": "Rs.110/Sq.Ft",
+        "TAN BROWN LAPOTRA": "Rs.120/Sq.Ft",
+        "APPLE GREEN LAPOTRA": "Rs.125/Sq.Ft",
+        "R-BLACK LAPOTRA": "Rs.150/Sq.Ft",
+        "DAISY GREEN": "Rs.135/Sq.Ft",
+        "BLACK GRANITE": "Rs.165/Sq.Ft"
+    },
+
+    "quartzite": {
+        "QUARTZITE": "Rs.200/Sq.Ft"
+    }
+}
