@@ -438,46 +438,7 @@ href="css/price-quote.css">
   ]
 }
 </script>
-<script>
-document
-    .getElementById("quoteForm")
-    .addEventListener("submit", async function (e) {
 
-        e.preventDefault();
-
-        const checked = [...document.querySelectorAll(
-            'input[type="checkbox"]:checked'
-        )];
-
-        const items = checked.map(x => x.value);
-
-        const payload = {
-
-            name: this.name.value,
-
-            mobile: this.mobile.value,
-
-            email: this.email.value,
-
-            items
-
-        };
-
-        await fetch(
-            "YOUR_WEBAPP_URL",
-            {
-                method: "POST",
-                body: JSON.stringify(payload)
-            }
-        );
-
-        alert(
-            "Price quote sent to your email."
-        );
-
-        this.reset();
-});
-</script>	
 <script src="js/mobile.js"></script>
 <script src="js/price-quote.js"></script>
 </body>
