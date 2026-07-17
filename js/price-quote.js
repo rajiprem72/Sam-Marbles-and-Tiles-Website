@@ -52,26 +52,23 @@ document
 
             };
 
+            const formData = new FormData();
+            
+            formData.append(
+                "payload",
+                JSON.stringify(payload)
+            );
+            
             const response = await fetch(
                 WEB_APP_URL,
                 {
-
+            
                     method: "POST",
-
-                    headers: {
-
-                        "Content-Type":
-                            "application/json"
-
-                    },
-
-                    body: JSON.stringify(
-                        payload
-                    )
-
+            
+                    body: formData
+            
                 }
-            );
-
+            );   
             const result =
                 await response.json();
 
