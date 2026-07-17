@@ -53,61 +53,40 @@ document
             };
 
             const formData = new FormData();
-            
+
             formData.append(
                 "payload",
                 JSON.stringify(payload)
             );
-            
-            const response = await fetch(
+
+            await fetch(
                 WEB_APP_URL,
                 {
-            
                     method: "POST",
-            
-                    body: formData
-            
+                    body: formData,
+                    mode: "no-cors"
                 }
-            );   
-            const result =
-                await response.json();
+            );
 
-            if (result.success) {
+            alert(
+                "Your quotation request has been submitted successfully."
+            );
 
-                alert(
-
-                    "Your quotation has been sent to your email successfully.\n\nQuote ID: " +
-
-                    result.quoteId
-
-                );
-
-                this.reset();
-
-            } else {
-
-                alert(
-
-                    "Error:\n" +
-
-                    result.message
-
-                );
-
-            }
+            this.reset();
 
         } catch (error) {
 
-    console.error(error);
+            console.error(error);
 
-    alert(
-        "Error:\n\n" + error.message
-    );
+            alert(
+                "Something went wrong. Please try again."
+            );
 
-}
+        } finally {
 
-        submitButton.disabled = false;
+            submitButton.disabled = false;
+            submitButton.innerText = "Get Price Quote";
 
-        submitButton.innerText = "Get Price Quote";
+        }
 
     });
