@@ -384,3 +384,23 @@ section {
         padding: 14px;
     }
 }
+
+
+.quote-note {
+
+    background: #f4f8ff;
+
+    border-left: 4px solid #0b2341;
+
+    padding: 15px;
+
+    margin-top: 15px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+    color: #333;
+}
