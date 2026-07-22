@@ -1,6 +1,7 @@
-const WEB_APP_URL =
-    "https://script.google.com/macros/s/AKfycbx11kMZUg2yYiZZ9AkscGFhLpqUKP7hdPfKIDC3CYHFXVDlLzu--8Yqoj6-yx4Cd7dWOA/exec";
-
+//const WEB_APP_URL =
+ //   "https://script.google.com/macros/s/AKfycbx11kMZUg2yYiZZ9AkscGFhLpqUKP7hdPfKIDC3CYHFXVDlLzu--8Yqoj6-yx4Cd7dWOA/exec";
+const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxuu7-l43BhynGaxZ8Aqwk5UGWxP-E0JYsCIBwle8g5WV2T5DOREu3zd1RFVJq7cEwe0g/exec"
+ 
 document
     .getElementById("quoteForm")
     .addEventListener("submit", async function (e) {
